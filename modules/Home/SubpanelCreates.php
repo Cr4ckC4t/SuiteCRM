@@ -41,6 +41,7 @@ if (!defined('sugarEntry') || !sugarEntry) {
  * display the words "Powered by SugarCRM" and "Supercharged by SuiteCRM".
  */
 
+$_REQUEST['target_module'] = basename($_REQUEST['target_module']);
 $mod_strings   = return_module_language($current_language, $_REQUEST['target_module']);
 $target_module = $_REQUEST['target_module']; // target class
 
